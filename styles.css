@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Quicksand:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10vh;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #333;
+  font-size: 6vw;
+  text-shadow: 1px 1px #ffadad;
+  text-align: center;
+  margin: 0 10px 30px;
+}
+
+#prankButton {
+  position: absolute;
+  padding: 3.5vw 6vw;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 90vw;
+  white-space: nowrap;
+}
+
+#prankButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #prankButton {
+    padding: 15px 35px;
+    font-size: 18px;
+  }
+}
+
+#prankButton {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
